@@ -10,6 +10,17 @@
             ]
         }
     },
+    "runArgs": [
+        // add flags required to run cLab on docker-outside-of-docker
+        "--network=host",
+		"--pid=host",
+		"--privileged"
+    ],
 	"workspaceMount": "source=${localWorkspaceFolder},target=${containerWorkspaceFolder},type=bind",
-	"workspaceFolder": "${localWorkspaceFolder}"
+	"workspaceFolder": "${localWorkspaceFolder}",
+    "features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+	},
+    // install cmdo tool with post-create command
+    "postCreateCommand": "bash -c \"$(curl -sL https://raw.githubusercontent.com/hellt/cmdo/master/get.sh)\""
 }
