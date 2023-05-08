@@ -16,6 +16,8 @@ devices:
     - show version
     - show running-config
     - show tech-support
+    - show ip bgp summary
+    - show bgp evpn summary
 
   S02:
     platform: arista_eos
@@ -24,6 +26,8 @@ devices:
     - show version
     - show running-config
     - show tech-support
+    - show ip bgp summary
+    - show bgp evpn summary
 
   L01:
     platform: arista_eos
@@ -32,6 +36,8 @@ devices:
     - show version
     - show running-config
     - show tech-support
+    - show ip bgp summary
+    - show bgp evpn summary
 
   L02:
     platform: arista_eos
@@ -40,3 +46,5 @@ devices:
     - show version
     - show running-config
     - show tech-support
+    - show ip bgp summary
+    - show bgp evpn summary
