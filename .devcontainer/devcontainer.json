@@ -1,0 +1,15 @@
+{
+    "name": "clab-demo",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "oderwat.indent-rainbow"
+            ]
+        }
+    },
+	"workspaceMount": "source=${localWorkspaceFolder},target=${containerWorkspaceFolder},type=bind",
+	"workspaceFolder": "${localWorkspaceFolder}"
+}
